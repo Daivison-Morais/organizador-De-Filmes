@@ -49,6 +49,7 @@ para tornar um filme assistido basta enviarum corpo no formato:
 {
   "filmId": "10", "userId":"10", "nota":"bom filme", "status": "true" 
 }
+```
 
 -GET: '/amountByPlatform/netflix'
 
