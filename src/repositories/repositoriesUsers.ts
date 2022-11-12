@@ -5,6 +5,7 @@ async function insertedUser(name: string){
 }
 
 async function insertedWatchedFilm(filmId: string, userId: string, nota: string | number, status: boolean){
+
     await connection.query(`INSERT INTO "filmUser" ("filmId", "userId", nota, status) VALUES ($1, $2, $3, $4);`, [filmId, userId, nota, status]);
 }
 

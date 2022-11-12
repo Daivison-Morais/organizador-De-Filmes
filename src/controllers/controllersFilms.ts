@@ -2,9 +2,17 @@ import connection from "../database/database.js";
 import {Request, Response} from "express";
 import { deletedMovie, insertedFilm } from "../repositories/repositoriesFilms.js";
 import { BodyFilms } from "../protocols/protocolsListResult.js";
+import { schemaPostFilm } from "../schemas/schemasPostfilms.js";
 
 const postFilm = async (req: Request, res: Response) =>{
     const {name, genre, platform }= req.body as BodyFilms;
+
+    const {error} = schemaPostFilm.validate(req.body);
+    if(error){
+        return res.status(400).send({
+            message: error.message
+        })
+    }
 
 try {
     await insertedFilm(name, genre, platform)

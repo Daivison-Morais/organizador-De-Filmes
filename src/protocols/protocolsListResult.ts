@@ -10,5 +10,9 @@ export type BodyFilms = {
 }
 
 export type BodyFilmsWatched = {
-    filmId: string, userId:string, nota:( string | number), status: boolean
+    filmId: string, 
+    userId:string, 
+    status: boolean,
+    nota:( string | number), 
+    
 }
