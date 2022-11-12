@@ -29,7 +29,7 @@ para postar um filme é necessário um corpo com o seguinte formato:
 
 para deletar um filme é necessário mandar via params o id do filme
 
-## users:
+### users:
 
 -POST: '/postUser'
 
