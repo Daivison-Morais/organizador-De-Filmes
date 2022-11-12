@@ -55,6 +55,8 @@ para tornar um filme assistido basta enviarum corpo no formato:
 
 Esta requisição permite obter filmes por plataforma  //atualmente disponíveis: netflix e prime.
 
+<br>
+
 -GET: '/amountByGender/action'
 
 Esta requisição permite obter filmes por plataforma //atualmente disponíveis: action e adventure.
