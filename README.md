@@ -5,12 +5,19 @@ Tem como objetivo organizar filmes já assistidos com base em diversos filmes, c
 
 ## banco de dados
 
-Para utilizar o banco de dados:
+Para utilizar o banco de dados postgres com alguns dados já inseridos:
 
 ```
 bach:
 psql -U username -d database < dump.sql
 ```
+<br>
+Agora rode esse comando:
+
+``` 
+bash:
+npx nodemon src/app.ts 
+````
 
 ## Rotas
 
