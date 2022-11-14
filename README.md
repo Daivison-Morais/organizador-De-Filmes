@@ -7,7 +7,8 @@ Tem como objetivo organizar filmes já assistidos com base em diversos filmes, c
 
 Para utilizar o banco de dados:
 
-```bash
+```
+bach:
 psql -U username -d database < dump.sql
 ```
 
